@@ -5,35 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Vino Physics</title>
     <style>
+        /* General Page Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: #4b4b4b;
         }
         header {
             background-color: #3c3b3b;
-            color: #ffffff;
+            padding: 20px;
             text-align: center;
-            padding: 20px 0;
+            color: #ffffff;
+        }
+        header img {
+            height: 120px;
         }
         header h1 {
-            font-size: 2.5em;
-            margin: 0;
+            margin: 10px 0 0;
+            font-size: 3em;
+            font-family: 'Georgia', serif;
         }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Bar */
         nav {
-            text-align: center;
-            padding: 10px;
             background-color: #505050;
+            text-align: center;
+            padding: 10px 0;
         }
         nav a {
-            color: #ffffff;
+            color: #f1c232;
             margin: 0 15px;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
         }
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
         .hero {
-            background-image: url('https://images.unsplash.com/photo-1533743983669-94fa5c4338ec');
+            background-image: url('https://images.unsplash.com/photo-1584515933487-779824d29309');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -45,23 +66,36 @@
         }
         .hero h2 {
             font-size: 2.5em;
+            margin: 0;
         }
+
+        /* Content Sections */
         .container {
-            padding: 20px;
+            padding: 20px 40px;
         }
         .about, .products, .contact {
-            margin-bottom: 20px;
-            padding: 20px;
-            background: #ffffff;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f7f7f7;
+            border: 1px solid #dddddd;
             border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        .products ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .products li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Footer */
         footer {
             background: #333333;
             color: #ffffff;
             text-align: center;
-            padding: 15px 0;
-            position: relative;
-            bottom: 0;
+            padding: 20px 0;
         }
         footer p {
             margin: 0;
@@ -71,20 +105,21 @@
 <body>
     <!-- Header Section -->
     <header>
+        <img src="file-bxC0hoWu5gdHIJE5nMFAcbqi" alt="In Vino Physics Logo">
         <h1>In Vino Physics</h1>
-        <p>The Science of Winemaking</p>
+        <p>The Science of Wine Meets the Art of Tradition</p>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Our Wines</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <!-- Hero Section -->
     <div class="hero">
-        <h2>Welcome to In Vino Physics</h2>
+        <h2>Exploring the Intersection of Tradition and Technology</h2>
     </div>
 
     <!-- Main Content Section -->
@@ -93,26 +128,27 @@
         <!-- About Section -->
         <section id="about" class="about">
             <h2>About Us</h2>
-            <p>At In Vino Physics, we blend the art of winemaking with the precision of science. Our vineyard is dedicated to producing wines that are not only delicious but crafted with a deep understanding of the chemistry and physics behind every bottle. Each vintage tells a story of nature and science in perfect harmony.</p>
+            <p>In Vino Physics is a boutique vineyard nestled in the heart of the Slavic countryside. Our passion for winemaking is paired with a love for science and a deep respect for traditional methods. Each of our wines is crafted with precision, bringing together the richness of heritage and the finesse of modern physics. From vine to bottle, we measure, refine, and perfect every step of the process to ensure every glass tells a story of art, nature, and science in harmony.</p>
         </section>
 
         <!-- Products Section -->
         <section id="products" class="products">
             <h2>Our Wines</h2>
             <ul>
-                <li><strong>Quantum Merlot</strong>: A deep, bold red with hints of blackberry and a smooth finish.</li>
-                <li><strong>Proton Pinot Noir</strong>: Light and complex with layers of cherry, raspberry, and earth tones.</li>
-                <li><strong>Neutrino Chardonnay</strong>: A crisp and refreshing white with notes of apple and citrus.</li>
-                <li><strong>Graviton Cabernet Sauvignon</strong>: Rich and intense, perfect for pairing with hearty dishes.</li>
+                <li><strong>Quantum Merlot</strong>: A robust red wine with bold berry flavors and a smooth finish.</li>
+                <li><strong>Proton Pinot Noir</strong>: A lighter, complex wine with notes of cherry and raspberry.</li>
+                <li><strong>Neutrino Chardonnay</strong>: Crisp and refreshing, with hints of apple and citrus.</li>
+                <li><strong>Graviton Cabernet Sauvignon</strong>: A rich and full-bodied wine, perfect for pairing with savory dishes.</li>
             </ul>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
-            <p>Want to learn more about our wines or schedule a vineyard tour? Reach out to us!</p>
+            <p>We’d love to hear from you! For inquiries, vineyard tours, or to learn more about our wines, feel free to reach out:</p>
             <p><strong>Email</strong>: info@invinohysics.com</p>
             <p><strong>Phone</strong>: +1 (123) 456-7890</p>
+            <p>Follow us on social media to stay updated on new releases and events!</p>
         </section>
 
     </div>
@@ -123,3 +159,4 @@
     </footer>
 </body>
 </html>
+
